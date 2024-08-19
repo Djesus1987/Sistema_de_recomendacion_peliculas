@@ -114,34 +114,43 @@ class MovieDetails(BaseModel):
     revenue: float
     return_on_investment: float
 
-@app.get('/get_director')
-def get_director(nombre_director: str) -> Dict[str, List[MovieDetails]]:
-    # Aquí se asume que el dataset ha sido cargado en una variable global o contexto.
-    # Vamos a simular esto con un ejemplo de cómo podrías acceder a los datos.
-    dataset = pd.read_csv('Datasets/Directores.csv')
-    # Cargar datos del dataset. Esto debería hacerse en el archivo principal.
-    # Por ejemplo:
-    # dataset = cargar_dataset()
+class DirectorResponse(BaseModel):
+    success: bool
+    movies: List[MovieDetails]
+
+@app.get('/get_director', response_model=DirectorResponse)
+def get_director(nombre_director: str) -> DirectorResponse:
+    # Cargar el dataset desde un CSV
+    try:
+        dataset = pd.read_csv('Datasets/Directores.csv')
+    except FileNotFoundError:
+        raise HTTPException(status_code=500, detail="Dataset no encontrado")
     
-    # Filtrar datos por director
-    director_data = dataset[dataset['name'] == nombre_director]
+    director_data = dataset[dataset['name'].str.lower() == nombre_director.lower()]
     
     if director_data.empty:
         raise HTTPException(status_code=404, detail="Director no encontrado")
     
-    # Obtener películas del director
     movies = []
     for _, row in director_data.iterrows():
-        movie_details = {
-            "title": row['title'],
-            "release_date": row['release_date'],
-            "budget": row['budget'],
-            "revenue": row['revenue'],
-            "return_on_investment": (row['revenue'] - row['budget']) / row['budget'] if row['budget'] > 0 else 0
-        }
+        budget = row['budget'] if pd.notna(row['budget']) else 0
+        revenue = row['revenue'] if pd.notna(row['revenue']) else 0
+        
+        if budget > 0:
+            return_on_investment = (revenue - budget) / budget
+        else:
+            return_on_investment = 0
+        
+        movie_details = MovieDetails(
+            title=row['title'],
+            release_date=row['release_date'],
+            budget=budget,
+            revenue=revenue,
+            return_on_investment=return_on_investment
+        )
         movies.append(movie_details)
     
-    return {"success": True, "movies": movies}
+    return DirectorResponse(success=True, movies=movies)
 
 
 # Función de recomendación
