@@ -1,0 +1,6 @@
+uvicorn
+pandas
+fastapi
+scikit-learn
+pydantic
+typing
