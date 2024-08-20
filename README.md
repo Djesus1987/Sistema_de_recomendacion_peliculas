@@ -74,7 +74,7 @@ Despliegue de la API: La acción de hacer que una API esté disponible y accesib
 
 ## Links útiles:
 Sitio web oficial de Steam
-Documentación de FastAPI
+## * Documentación de FastAPI
 Documentación de Pandas
 Documentación de Scikit-Learn
 
