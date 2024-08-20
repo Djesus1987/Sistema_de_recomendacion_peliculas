@@ -25,12 +25,13 @@ Utilizamos Python con las siguientes librerías:
 - re
 
 ## 1) Transformación de Datos
-Para optimizar el rendimiento de la API y del modelo de machine learning, trabajé en la lectura del dataset en el formato correcto, eliminando columnas innecesarias y realizando las transformaciones necesarias. dejando como resultado, de dos datasets originales, tres datasets: dos para las funciones principales de la API y un dataset para el sistema de recomendacion. 
+Para optimizar el rendimiento de la API y del modelo de machine learning, se trabajó en la lectura del dataset en el formato correcto, eliminando columnas innecesarias y realizando las transformaciones pertinentes, dejando como resultado, de los dos datasets originales, tres datasets: dos para las funciones principales de la API y un dataset para el sistema de recomendacion, esto con el fin de hacer mas veloces las consultas. 
 
 ## 2) Análisis Exploratorio de Datos (EDA)
-Llevé a cabo un análisis exploratorio de los datos para identificar relaciones entre variables, detectar outliers y anomalías, y descubrir patrones interesantes. Este análisis fue crucial para entender los datos y prepararlos adecuadamente para el modelado.
+Se Llevó a cabo un análisis exploratorio de los datos para identificar relaciones entre variables, detectar outliers y anomalías, y descubrir patrones interesantes. Este análisis fue crucial para entender los datos y prepararlos adecuadamente para el modelado.
 
 ## 3) Despliegue y uso de la API
+
 La API está desplegada en Render y se puede acceder a través de varios endpoints:
 
 - cantidad_filmaciones_mes( Mes ): devuelve la cantidad de películas que fueron estrenadas en el mes consultado.
@@ -53,6 +54,7 @@ El desarrollo de un sistema de recomendación de películas combina técnicas de
 Por otro lado, se desarrolló un sistema de consulta para extraer información detallada sobre películas, actores y directores. A través de endpoints específicos, los usuarios pueden realizar consultas que les permiten acceder rápidamente a datos clave. Estos endpoints permiten obtener la cantidad de películas estrenadas en un mes o día específico, información sobre la recepción de una película, y un análisis del éxito de actores y directores basado en el retorno de inversión de sus películas. Este sistema es una herramienta poderosa para el análisis de la industria cinematográfica, ofreciendo información detallada para investigadores y profesionales del cine.
 
 # Información extra
+
 Modelo de Similitud de Coseno:
 El modelo de similitud de coseno es una técnica comúnmente utilizada en la recuperación de información y el filtrado colaborativo, que permite calcular la similitud entre vectores de características. En el contexto de este sistema de recomendación de videojuegos para Steam, el modelo se utiliza para encontrar juegos similares en función de las características de los mismos.
 
