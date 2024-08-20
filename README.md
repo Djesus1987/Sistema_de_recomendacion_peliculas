@@ -48,7 +48,6 @@ La API está desplegada en Render y se puede acceder a través de varios endpoin
 
 # Conclusión
 
-## Resumen
 El desarrollo de un sistema de recomendación de películas combina técnicas de análisis de datos, procesamiento de texto y machine learning para ofrecer sugerencias personalizadas. En este proyecto, se implementaron dos enfoques principales: uno basado en popularidad, que recomienda películas valoradas por su puntaje promedio y cantidad de votos, y otro basado en similitud de contenido, que sugiere películas con características similares. Este sistema sirve como una base práctica que puede ser expandida con técnicas más avanzadas para mejorar la experiencia del usuario.
 
 Por otro lado, se desarrolló un sistema de consulta para extraer información detallada sobre películas, actores y directores. A través de endpoints específicos, los usuarios pueden realizar consultas que les permiten acceder rápidamente a datos clave. Estos endpoints permiten obtener la cantidad de películas estrenadas en un mes o día específico, información sobre la recepción de una película, y un análisis del éxito de actores y directores basado en el retorno de inversión de sus películas. Este sistema es una herramienta poderosa para el análisis de la industria cinematográfica, ofreciendo información detallada para investigadores y profesionales del cine.
