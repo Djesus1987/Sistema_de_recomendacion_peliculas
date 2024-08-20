@@ -1,4 +1,4 @@
-Sistema de recomendación de videojuegos de Steam
+## Sistema de recomendación de videojuegos de Steam
 
 alt text
 
