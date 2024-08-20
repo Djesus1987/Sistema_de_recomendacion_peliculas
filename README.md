@@ -16,10 +16,10 @@ Utilizamos Python con las siguientes librerías:
 - Uvicorn
 - FastAPI
 - Ast
-- TextBlob
 - Seaborn
 - Matplotlib
 - Wordcloud
+- re
 
 ## 1) Transformación de Datos
 Para optimizar el rendimiento de la API y del modelo de machine learning, trabajé en la lectura del dataset en el formato correcto, eliminando columnas innecesarias y realizando las transformaciones necesarias. dejando como resultado, de dos datasets originales, tres datasets: dos para las funciones principales de la API y un dataset para el sistema de recomendacion. 
