@@ -7,7 +7,7 @@ Se desarrolla una API para consultas con un sistema de recomendación de pelicul
 - Exploracion de los datasets, se percibió:
 desorden y datos anidados.
 ## Roles:
-- Data Scientist: con la misión de desarrollar el sistema de recomendación.
+- Data Scientist: Desarrollo del sistema de recomendación.
 - Data Engineer: creacion de un MVP (Minimum Viable Product).
 
 ## Tecnologías Utilizadas
