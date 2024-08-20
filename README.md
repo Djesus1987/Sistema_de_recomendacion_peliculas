@@ -10,16 +10,16 @@ desorden y datos anidados. rol de Data Scientist: con la misión de desarrollar 
 ## Tecnologías Utilizadas
 Utilizamos Python con las siguientes librerías:
 
-Pandas
+- Pandas
 - Numpy
-Scikit-learn
-Uvicorn
-FastAPI
-Ast
-TextBlob
-Seaborn
-Matplotlib
-Wordcloud
+- Scikit-learn
+- Uvicorn
+- FastAPI
+- Ast
+- TextBlob
+- Seaborn
+- Matplotlib
+- Wordcloud
 
 ## 1) Transformación de Datos
 Para optimizar el rendimiento de la API y del modelo de machine learning, trabajé en la lectura del dataset en el formato correcto, eliminando columnas innecesarias y realizando las transformaciones necesarias. dejando como resultado, de dos datasets originales, tres datasets: dos para las funciones principales de la API y un dataset para el sistema de recomendacion. 
@@ -30,17 +30,21 @@ Llevé a cabo un análisis exploratorio de los datos para identificar relaciones
 ## 3) Despliegue y uso de la API
 La API está desplegada en Render y se puede acceder a través de varios endpoints:
 
-cantidad_filmaciones_mes( Mes ): devuelve la cantidad de películas que fueron estrenadas en el mes consultado.
+- cantidad_filmaciones_mes( Mes ): devuelve la cantidad de películas que fueron estrenadas en el mes consultado.
                     
-cantidad_filmaciones_dia( Dia ): Devuelve la cantidad de películas que fueron estrenadas en día consultado en la totalidad del dataset.
+- cantidad_filmaciones_dia( Dia ): Devuelve la cantidad de películas que fueron estrenadas en día consultado en la totalidad del dataset.
                    
-score_titulo( titulo_de_la_filmación ): Decuelve el título, el año de estreno y el score.
+- score_titulo( titulo_de_la_filmación ): Decuelve el título, el año de estreno y el score.
+
+# Autor
+
+D´Jesús Blanco 
                     
-votos_titulo( titulo_de_la_filmación ): Devuelve el título, la cantidad de votos y el valor promedio de las votaciones.
+- votos_titulo( titulo_de_la_filmación ): Devuelve el título, la cantidad de votos y el valor promedio de las votaciones.
 
-get_actor( nombre_actor ): Devuelve el éxito del mismo medido a través del retorno, la cantidad de películas que en las que ha participado y el promedio de retorno. 
+- get_actor( nombre_actor ): Devuelve el éxito del mismo medido a través del retorno, la cantidad de películas que en las que ha participado y el promedio de retorno. 
 
-get_director( nombre_director ):Devuelve el éxito del mismo medido a través del retorno. Además, deberá devolver el nombre de cada película con la fecha de lanzamiento, retorno individual, costo y ganancia de la misma.
+- get_director( nombre_director ):Devuelve el éxito del mismo medido a través del retorno. Además, deberá devolver el nombre de cada película con la fecha de lanzamiento, retorno individual, costo y ganancia de la misma.
 
 # Conclusión
 
@@ -58,23 +62,18 @@ En la implementación de este proyecto, se calculó la similitud de coseno entre
 Para calcular la similitud de coseno, se utilizó la biblioteca scikit-learn en Python, que proporciona herramientas eficientes para el análisis de datos y la minería de textos.
 
 # Glosario:
-Data Scientist: Un profesional que utiliza técnicas estadísticas, de programación y de aprendizaje automático para analizar y obtener información a partir de datos.
+- Data Scientist: Un profesional que utiliza técnicas estadísticas, de programación y de aprendizaje automático para analizar y obtener información a partir de datos.
 
-Data Engineer: Un especialista en el diseño y mantenimiento de sistemas de gestión de datos, incluidas bases de datos, pipelines de datos y plataformas de almacenamiento de datos.
+- Data Engineer: Un especialista en el diseño y mantenimiento de sistemas de gestión de datos, incluidas bases de datos, pipelines de datos y plataformas de almacenamiento de datos.
 
-MVP (Minimum Viable Product): El producto mínimo viable es una versión simplificada de un producto que se utiliza para probar la viabilidad de una idea y recopilar feedback de los usuarios antes de invertir en su desarrollo completo.
+- MVP (Minimum Viable Product): El producto mínimo viable es una versión simplificada de un producto que se utiliza para probar la viabilidad de una idea y recopilar feedback de los usuarios antes de invertir en su desarrollo completo.
 
-ETL (Extract, Transform, Load): Proceso utilizado para extraer datos de varias fuentes, transformarlos en un formato adecuado y cargarlos en un sistema de destino, como una base de datos.
+- ETL (Extract, Transform, Load): Proceso utilizado para extraer datos de varias fuentes, transformarlos en un formato adecuado y cargarlos en un sistema de destino, como una base de datos.
 
-API (Application Programming Interface): Un conjunto de reglas y definiciones que permite a diferentes software comunicarse entre sí. En este contexto, se refiere a la interfaz de programación de la aplicación utilizada para acceder y manipular los datos de Steam.
+- API (Application Programming Interface): Un conjunto de reglas y definiciones que permite a diferentes software comunicarse entre sí. En este contexto, se refiere a la interfaz de programación de la aplicación utilizada para acceder y manipular los datos de Steam.
 
-EDA (Exploratory Data Analysis): Proceso de análisis de datos para resumir las características principales de un conjunto de datos, a menudo con métodos visuales.
+- EDA (Exploratory Data Analysis): Proceso de análisis de datos para resumir las características principales de un conjunto de datos, a menudo con métodos visuales.
 
 Despliegue de la API: La acción de hacer que una API esté disponible y accesible para su uso, generalmente a través de un servidor web o una plataforma en la nube.
 
-## Links útiles:
-Sitio web oficial de Steam
-## * Documentación de FastAPI
-Documentación de Pandas
-Documentación de Scikit-Learn
 
