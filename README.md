@@ -52,7 +52,7 @@ El desarrollo de un sistema de recomendación de películas combina técnicas de
 Por otro lado, se desarrolló un sistema de consulta para extraer información detallada sobre películas, actores y directores. A través de endpoints específicos, los usuarios pueden realizar consultas que les permiten acceder rápidamente a datos clave. Estos endpoints permiten obtener la cantidad de películas estrenadas en un mes o día específico, información sobre la recepción de una película, y un análisis del éxito de actores y directores basado en el retorno de inversión de sus películas. Este sistema es una herramienta poderosa para el análisis de la industria cinematográfica, ofreciendo información detallada para investigadores y profesionales del cine.
 
 Información extra
-Datasets/Diccionario de datos.xlsx
+# Datasets/Diccionario de datos.xlsx
 Modelo de Similitud de Coseno:
 El modelo de similitud de coseno es una técnica comúnmente utilizada en la recuperación de información y el filtrado colaborativo, que permite calcular la similitud entre vectores de características. En el contexto de este sistema de recomendación de videojuegos para Steam, el modelo se utiliza para encontrar juegos similares en función de las características de los mismos.
 
