@@ -11,7 +11,7 @@ desorden y datos anidados. rol de Data Scientist: con la misión de desarrollar 
 Utilizamos Python con las siguientes librerías:
 
 Pandas
-Numpy
+- Numpy
 Scikit-learn
 Uvicorn
 FastAPI
