@@ -35,10 +35,6 @@ La API está desplegada en Render y se puede acceder a través de varios endpoin
 - cantidad_filmaciones_dia( Dia ): Devuelve la cantidad de películas que fueron estrenadas en día consultado en la totalidad del dataset.
                    
 - score_titulo( titulo_de_la_filmación ): Decuelve el título, el año de estreno y el score.
-
-# Autor
-
-D´Jesús Blanco 
                     
 - votos_titulo( titulo_de_la_filmación ): Devuelve el título, la cantidad de votos y el valor promedio de las votaciones.
 
@@ -76,4 +72,6 @@ Para calcular la similitud de coseno, se utilizó la biblioteca scikit-learn en 
 
 Despliegue de la API: La acción de hacer que una API esté disponible y accesible para su uso, generalmente a través de un servidor web o una plataforma en la nube.
 
+# Autor
 
+D´Jesús Blanco 
