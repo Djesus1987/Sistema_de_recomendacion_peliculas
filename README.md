@@ -52,8 +52,7 @@ El desarrollo de un sistema de recomendación de películas combina técnicas de
 Por otro lado, se desarrolló un sistema de consulta para extraer información detallada sobre películas, actores y directores. A través de endpoints específicos, los usuarios pueden realizar consultas que les permiten acceder rápidamente a datos clave. Estos endpoints permiten obtener la cantidad de películas estrenadas en un mes o día específico, información sobre la recepción de una película, y un análisis del éxito de actores y directores basado en el retorno de inversión de sus películas. Este sistema es una herramienta poderosa para el análisis de la industria cinematográfica, ofreciendo información detallada para investigadores y profesionales del cine.
 
 Información extra
-Video demostrativo de la API
-Diccionario de datos Steam
+Datasets/Diccionario de datos.xlsx
 Modelo de Similitud de Coseno:
 El modelo de similitud de coseno es una técnica comúnmente utilizada en la recuperación de información y el filtrado colaborativo, que permite calcular la similitud entre vectores de características. En el contexto de este sistema de recomendación de videojuegos para Steam, el modelo se utiliza para encontrar juegos similares en función de las características de los mismos.
 
@@ -72,8 +71,6 @@ ETL (Extract, Transform, Load): Proceso utilizado para extraer datos de varias f
 
 API (Application Programming Interface): Un conjunto de reglas y definiciones que permite a diferentes software comunicarse entre sí. En este contexto, se refiere a la interfaz de programación de la aplicación utilizada para acceder y manipular los datos de Steam.
 
-NLP (Natural Language Processing): Un campo de la inteligencia artificial que se ocupa de la interacción entre las computadoras y el lenguaje humano.
-
 EDA (Exploratory Data Analysis): Proceso de análisis de datos para resumir las características principales de un conjunto de datos, a menudo con métodos visuales.
 
 Despliegue de la API: La acción de hacer que una API esté disponible y accesible para su uso, generalmente a través de un servidor web o una plataforma en la nube.
@@ -83,7 +80,4 @@ Sitio web oficial de Steam
 Documentación de FastAPI
 Documentación de Pandas
 Documentación de Scikit-Learn
-Contacto:
-Linkedin
-GitHub
-E-mail: santosiparraguirrem@gmail.com
+
