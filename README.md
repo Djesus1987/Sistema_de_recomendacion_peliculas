@@ -3,9 +3,12 @@
 ## Descripción del proyecto
 Se desarrolla una API para consultas con un sistema de recomendación de peliculas. Los endpoints permiten consultar información tal como: fechas de estreno, popularidad, directores, actores, y el rendimienbto generado y no menos importante, un sistema de recomendación segun la pelicula seleccionada.
 
-## Desafíos y roles a desarrollar
-al explorar los datasets, se percibió:
-desorden y datos anidados. rol de Data Scientist: con la misión de desarrollar el sistema de recomendación, rol de Data Engineer: creacion de un MVP (Minimum Viable Product).
+## Desafíos 
+- Exploracion de los datasets, se percibió:
+desorden y datos anidados.
+## Roles:
+- Data Scientist: con la misión de desarrollar el sistema de recomendación.
+- Data Engineer: creacion de un MVP (Minimum Viable Product).
 
 ## Tecnologías Utilizadas
 Utilizamos Python con las siguientes librerías:
