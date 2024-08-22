@@ -55,9 +55,9 @@ Por otro lado, se desarrolló un sistema de consulta para extraer información d
 # Información extra
 
 Modelo de Similitud de Coseno:
-El modelo de similitud de coseno es una técnica comúnmente utilizada en la recuperación de información y el filtrado colaborativo, que permite calcular la similitud entre vectores de características. En el contexto de este sistema de recomendación de videojuegos para Steam, el modelo se utiliza para encontrar juegos similares en función de las características de los mismos.
+El modelo de similitud de coseno es una técnica comúnmente utilizada en la recuperación de información y el filtrado colaborativo, que permite calcular la similitud entre vectores de características. En el contexto de este sistema de recomendación de peliculas, el modelo se utiliza para encontrar peliculas similares en función de las características de los mismos.
 
-En la implementación de este proyecto, se calculó la similitud de coseno entre vectores de características que representan diferentes juegos. Estos vectores de características pueden incluir información como género, desarrollador, reseñas de usuarios, entre otros. Una vez calculada la similitud de coseno, se identificaron las peliculas más similares y se recomendaron al usuario.
+En la implementación de este proyecto, se calculó la similitud de coseno entre vectores de características que representan diferentes peliculas. Estos vectores de características pueden incluir información como fechas de estreno, directores, actores, y popularidad de las peliculas. Una vez calculada la similitud de coseno, se identificaron las peliculas más similares y se recomendaron al usuario.
 
 Para calcular la similitud de coseno, se utilizó la biblioteca scikit-learn en Python, que proporciona herramientas eficientes para el análisis de datos y la minería de textos.
 
@@ -70,7 +70,7 @@ Para calcular la similitud de coseno, se utilizó la biblioteca scikit-learn en 
 
 - ETL (Extract, Transform, Load): Proceso utilizado para extraer datos de varias fuentes, transformarlos en un formato adecuado y cargarlos en un sistema de destino, como una base de datos.
 
-- API (Application Programming Interface): Un conjunto de reglas y definiciones que permite a diferentes software comunicarse entre sí. En este contexto, se refiere a la interfaz de programación de la aplicación utilizada para acceder y manipular los datos de Steam.
+- API (Application Programming Interface): Un conjunto de reglas y definiciones que permite a diferentes software comunicarse entre sí. En este contexto, se refiere a la interfaz de programación de la aplicación utilizada para acceder y manipular los datos.
 
 - EDA (Exploratory Data Analysis): Proceso de análisis de datos para resumir las características principales de un conjunto de datos, a menudo con métodos visuales.
 
