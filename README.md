@@ -57,7 +57,7 @@ Por otro lado, se desarrolló un sistema de consulta para extraer información d
 Modelo de Similitud de Coseno:
 El modelo de similitud de coseno es una técnica comúnmente utilizada en la recuperación de información y el filtrado colaborativo, que permite calcular la similitud entre vectores de características. En el contexto de este sistema de recomendación de videojuegos para Steam, el modelo se utiliza para encontrar juegos similares en función de las características de los mismos.
 
-En la implementación de este proyecto, se calculó la similitud de coseno entre vectores de características que representan diferentes juegos. Estos vectores de características pueden incluir información como género, desarrollador, reseñas de usuarios, entre otros. Una vez calculada la similitud de coseno, se identificaron los juegos más similares y se recomendaron al usuario.
+En la implementación de este proyecto, se calculó la similitud de coseno entre vectores de características que representan diferentes juegos. Estos vectores de características pueden incluir información como género, desarrollador, reseñas de usuarios, entre otros. Una vez calculada la similitud de coseno, se identificaron las peliculas más similares y se recomendaron al usuario.
 
 Para calcular la similitud de coseno, se utilizó la biblioteca scikit-learn en Python, que proporciona herramientas eficientes para el análisis de datos y la minería de textos.
 
